@@ -3,8 +3,8 @@
 # (c) @AlbertEinsteinTG
 
 from pyrogram import filters, Client
+from translation import Translation
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from bot import Translation # pylint: disable=import-error
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
