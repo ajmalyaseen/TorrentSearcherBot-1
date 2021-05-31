@@ -14,9 +14,12 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('Developer', url='https://t.me/v_spot'),
-        InlineKeyboardButton('Help ⚙', callback_data="help")
-    ]]
+            InlineKeyboardButton("📫UPDATES", url="https://t.me/CoderzHEX"),
+            InlineKeyboardButton("🕵‍♂CREATOR", url="https://t.me/DIAGO_X")
+        ],[
+            InlineKeyboardButton("📕ABOUT", callback_data= "about"),
+            InlineKeyboardButton("🔐 CLOSE", callback_data= "close")
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         
         await update.message.edit_text(
@@ -32,8 +35,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "about": 
         buttons = [[
-            InlineKeyboardButton('Home ⚡', callback_data='start'),
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('⬇️BACK', callback_data='start'),
+            InlineKeyboardButton('🔐CLOSE', callback_data='close')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
