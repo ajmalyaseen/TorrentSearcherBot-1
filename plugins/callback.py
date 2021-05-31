@@ -1,8 +1,6 @@
 from pyrogram import Client, filters
+from translation import Translation
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-
-from bot import start_uptime, Translation, VERIFY # pylint: disable=import-error
-
 
 
 
